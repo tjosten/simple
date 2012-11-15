@@ -42,7 +42,7 @@ function issueSaveAjax(id, redirect){
     var pcontent = $("#post_content").val();
     var req = $.ajax({
         type: "POST",
-        url:"/admin/save/"+id,
+        url:"/m/admin/save/"+id,
         data: {title: ptitle,
                content: pcontent}
     });
@@ -50,7 +50,7 @@ function issueSaveAjax(id, redirect){
     {
         if (redirect)
         {
-            var win = window.open("/preview/"+id, '_blank');
+            var win = window.open("/m/preview/"+id, '_blank');
         }
     })
 }
